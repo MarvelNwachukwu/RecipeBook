@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffd700;
+  overflow: hidden;
+}
+
+#bodyDiv {
+  margin-top: 20vh;
+  margin-left: 20vw;
+  height: 60vh;
+  width: 60vw;
+  border-radius: 30px;
+  background: url(/assets/43060.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  padding-top: 5vh;
+  height: 10vh;
+  background-color: transparent;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+header #logo {
+  height: 10vh;
+  width: 5vw;
+  background: url(/assets/chef.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-left: 2vw;
+  margin-top: -5vh;
+}
+
+header #navMenu {
+  float: right;
+}
+
+header #navMenu input {
+  width: 0;
+  height: 3vh;
+  background-color: #c4b2b2;
+  color: #201e1e;
+  border: none;
+  border-radius: 30px;
+  padding-left: 4vw;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  cursor: not-allowed;
+}
+
+header #navMenu input:hover {
+  color: #201e1e;
+  background-color: #a8a5a0;
+}
+
+header #navMenu button {
+  height: 15px;
+  width: 15px;
+  background: url(/assets/search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+header #navMenu #Cancel {
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  background: url(/assets/cancel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header #navMenu a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1.5vw;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+header #navMenu a:hover {
+  border-bottom: 2px solid gold;
+}
+
+header #navMenu #SignIn {
+  margin-right: 2vw;
+  background-color: #49b81d;
+  color: white;
+  padding: 1vh 1.5vw 1vh 1.5vw;
+  margin-left: 2vw;
+}
+
+section {
+  height: 45vh;
+  position: relative;
+}
+
+section h1 {
+  position: absolute;
+  top: 10vh;
+  margin-left: 5vw;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 6vh;
+  color: #202020;
+}
+
+section p {
+  position: absolute;
+  min-width: 20vw;
+  max-width: 40vw;
+  margin-left: 5vw;
+  top: 20vh;
+  font-family: 'Bree Serif', serif;
+  font-size: 3vh;
+  color: #202020;
+}
+
+section a {
+  position: absolute;
+  top: 40vh;
+  margin-left: 5vw;
+  text-decoration: none;
+  color: white;
+  background-color: #49b81d;
+  padding: 1vh 2vw 1vh 2vw;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+section a:hover {
+  border-bottom: 2px solid gold;
+}
+/*# sourceMappingURL=style.css.map */

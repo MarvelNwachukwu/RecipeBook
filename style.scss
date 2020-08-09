@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$Firafonts: 'Fira Sans', sans-serif;
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffd700;
+  overflow: hidden;
+}
+#bodyDiv{
+  margin-top: 20vh;
+  margin-left: 20vw;
+  height: 60vh;
+  width: 60vw;
+  border-radius: 30px;
+  background: url(/assets/43060.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header{
+  padding-top: 5vh;
+  height: 10vh;
+  background-color: transparent;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  #logo{
+    height: 10vh;
+    width: 5vw;
+    background: url(/assets/chef.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-left: 2vw;
+    margin-top: -5vh;
+  }
+  #navMenu{
+    float: right;
+
+    input{
+      width: 0;
+      height: 3vh;
+      background-color: rgb(196, 178, 178);
+      color: rgb(32, 30, 30);
+      border: none;
+      border-radius: 30px;
+      padding-left: 4vw;
+      transition: all 2s;
+      cursor: not-allowed;
+      &:hover{
+        color: rgb(32, 30, 30);
+        background-color: rgb(168, 165, 160);
+      }
+    }
+    button{
+      height: 15px;
+      width: 15px;
+      background:url(/assets/search.svg);
+      // padding-bottom: 1vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border: none;
+      cursor: pointer;
+    }
+
+    #Cancel{
+      height: 10px;
+      width: 10px;
+      cursor: pointer;
+      background: url(/assets/cancel.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      margin-left: 1.5vw;
+      font-weight: 500;
+      font-size: 13px;
+      font-family: $Firafonts;
+
+      &:hover{  
+        border-bottom: 2px solid gold;
+      }
+    } 
+    #SignIn{
+      margin-right: 2vw;
+      background-color: rgb(73, 184, 29);
+      color: white;
+      padding: 1vh 1.5vw 1vh 1.5vw;
+      margin-left: 2vw;
+    }
+  }
+}
+
+section{
+  // background-color: rgb(73, 184, 29);
+  height: 45vh;
+  position: relative;
+
+  h1{
+    position: absolute;
+    top: 10vh;
+    margin-left: 5vw;
+    font-family: $Firafonts;
+    font-size: 6vh;
+    color: rgb(32, 32, 32);
+  }
+
+  p{
+    position: absolute;
+    min-width: 20vw;
+    max-width: 40vw;
+    margin-left: 5vw;
+    top: 20vh;
+    font-family: 'Bree Serif', serif;
+    font-size: 3vh;
+    color: rgb(32, 32, 32);
+  }
+
+  a{
+    position: absolute;
+    top: 40vh;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(73, 184, 29);
+    padding: 1vh 2vw 1vh 2vw;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: $Firafonts;
+    &:hover{  
+      border-bottom: 2px solid gold;
+    }
+  }
+}
