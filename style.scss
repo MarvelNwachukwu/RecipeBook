@@ -13,11 +13,8 @@ body{
   overflow: hidden;
 }
 #bodyDiv{
-  margin-top: 20vh;
-  margin-left: 20vw;
-  height: 60vh;
-  width: 60vw;
-  border-radius: 30px;
+  height: 100vh;
+  width: 100vw;
   background: url(/assets/43060.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -30,63 +27,70 @@ header{
   background-color: transparent;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
+  display: grid;
+  grid-template-columns: 10% 80%;
   #logo{
-    height: 10vh;
-    width: 5vw;
+    height: 15vh;
+    width: 7.5vw;
     background: url(/assets/chef.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    float: left;
     margin-left: 2vw;
-    margin-top: -5vh;
+    margin-top: -3vh;
   }
   #navMenu{
-    float: right;
-
-    input{
-      width: 0;
-      height: 3vh;
-      background-color: rgb(196, 178, 178);
-      color: rgb(32, 30, 30);
-      border: none;
-      border-radius: 30px;
-      padding-left: 4vw;
-      transition: all 2s;
-      cursor: not-allowed;
-      &:hover{
-        color: rgb(32, 30, 30);
-        background-color: rgb(168, 165, 160);
+    position: relative;
+    height: 10vh;
+    width: 90vw;
+    #formSpan{
+      // position: relative;
+      form{
+        position: absolute;
+        right: 38vw;
+        input{
+          width: 0;
+          height: 3vh;
+          background-color: rgb(196, 178, 178);
+          color: rgb(32, 30, 30);
+          border: none;
+          border-radius: 30px;
+          padding-left: 4vw;
+          transition: all 1s;
+          cursor: not-allowed;
+          &:hover{
+            color: rgb(32, 30, 30);
+            background-color: rgb(168, 165, 160);
+          }
+        }
+        button{
+          height: 1vw;
+          width: 1vw;
+          background:url(/assets/search.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          border: none;
+          cursor: pointer;
+        }
       }
-    }
-    button{
-      height: 15px;
-      width: 15px;
-      background:url(/assets/search.svg);
-      // padding-bottom: 1vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      border: none;
-      cursor: pointer;
-    }
 
-    #Cancel{
-      height: 10px;
-      width: 10px;
-      cursor: pointer;
-      background: url(/assets/cancel.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
+      #Cancel{
+        height: 10px;
+        width: 10px;
+        cursor: pointer;
+        background: url(/assets/cancel.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
     }
     a{
       text-decoration: none;
       color: black;
       margin-left: 1.5vw;
       font-weight: 500;
-      font-size: 13px;
+      font-size: 1.125vw;
       font-family: $Firafonts;
 
       &:hover{  
@@ -103,6 +107,11 @@ header{
   }
 }
 
+#navLinksSpan{
+  position: absolute;
+  right: 0;
+}
+
 section{
   // background-color: rgb(73, 184, 29);
   height: 45vh;
@@ -110,10 +119,10 @@ section{
 
   h1{
     position: absolute;
-    top: 10vh;
+    top: 20vh;
     margin-left: 5vw;
     font-family: $Firafonts;
-    font-size: 6vh;
+    font-size: 10vh;
     color: rgb(32, 32, 32);
   }
 
@@ -122,22 +131,22 @@ section{
     min-width: 20vw;
     max-width: 40vw;
     margin-left: 5vw;
-    top: 20vh;
+    top: 35vh;
     font-family: 'Bree Serif', serif;
-    font-size: 3vh;
+    font-size: 6vh;
     color: rgb(32, 32, 32);
   }
 
   a{
     position: absolute;
-    top: 40vh;
+    top: 70vh;
     margin-left: 5vw;
     text-decoration: none;
     color: white;
     background-color:rgb(73, 184, 29);
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 2vh 4vw 2vh 4vw;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 26px;
     font-family: $Firafonts;
     &:hover{  
       border-bottom: 2px solid gold;

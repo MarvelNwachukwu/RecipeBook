@@ -13,11 +13,8 @@ body {
 }
 
 #bodyDiv {
-  margin-top: 20vh;
-  margin-left: 20vw;
-  height: 60vh;
-  width: 60vw;
-  border-radius: 30px;
+  height: 100vh;
+  width: 100vw;
   background: url(/assets/43060.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -30,25 +27,35 @@ header {
   background-color: transparent;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80%;
+      grid-template-columns: 10% 80%;
 }
 
 header #logo {
-  height: 10vh;
-  width: 5vw;
+  height: 15vh;
+  width: 7.5vw;
   background: url(/assets/chef.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  float: left;
   margin-left: 2vw;
-  margin-top: -5vh;
+  margin-top: -3vh;
 }
 
 header #navMenu {
-  float: right;
+  position: relative;
+  height: 10vh;
+  width: 90vw;
 }
 
-header #navMenu input {
+header #navMenu #formSpan form {
+  position: absolute;
+  right: 38vw;
+}
+
+header #navMenu #formSpan form input {
   width: 0;
   height: 3vh;
   background-color: #c4b2b2;
@@ -56,19 +63,19 @@ header #navMenu input {
   border: none;
   border-radius: 30px;
   padding-left: 4vw;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   cursor: not-allowed;
 }
 
-header #navMenu input:hover {
+header #navMenu #formSpan form input:hover {
   color: #201e1e;
   background-color: #a8a5a0;
 }
 
-header #navMenu button {
-  height: 15px;
-  width: 15px;
+header #navMenu #formSpan form button {
+  height: 1vw;
+  width: 1vw;
   background: url(/assets/search.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +84,7 @@ header #navMenu button {
   cursor: pointer;
 }
 
-header #navMenu #Cancel {
+header #navMenu #formSpan #Cancel {
   height: 10px;
   width: 10px;
   cursor: pointer;
@@ -92,7 +99,7 @@ header #navMenu a {
   color: black;
   margin-left: 1.5vw;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 1.125vw;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -108,6 +115,11 @@ header #navMenu #SignIn {
   margin-left: 2vw;
 }
 
+#navLinksSpan {
+  position: absolute;
+  right: 0;
+}
+
 section {
   height: 45vh;
   position: relative;
@@ -115,10 +127,10 @@ section {
 
 section h1 {
   position: absolute;
-  top: 10vh;
+  top: 20vh;
   margin-left: 5vw;
   font-family: "Fira Sans", sans-serif;
-  font-size: 6vh;
+  font-size: 10vh;
   color: #202020;
 }
 
@@ -127,22 +139,22 @@ section p {
   min-width: 20vw;
   max-width: 40vw;
   margin-left: 5vw;
-  top: 20vh;
+  top: 35vh;
   font-family: 'Bree Serif', serif;
-  font-size: 3vh;
+  font-size: 6vh;
   color: #202020;
 }
 
 section a {
   position: absolute;
-  top: 40vh;
+  top: 70vh;
   margin-left: 5vw;
   text-decoration: none;
   color: white;
   background-color: #49b81d;
-  padding: 1vh 2vw 1vh 2vw;
+  padding: 2vh 4vw 2vh 4vw;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 26px;
   font-family: "Fira Sans", sans-serif;
 }
 

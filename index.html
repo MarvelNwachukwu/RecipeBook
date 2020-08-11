@@ -8,21 +8,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
   <title>Recipe Book</title>
 </head>
-<body>
-  <div id="bodyDiv">
+<body id="bodyDiv">
     <header>
       <div id="logo"></div>
       <div id="navMenu">
-        <span>
-          <input type="text" placeholder="...Search Recipe" width="0vw">
-          <button></button>
-          <span id="Cancel" hidden></span>
+        <span id="formSpan">
+          <form action="">
+            <input type="text" placeholder="...Search Recipe" width="0vw">
+            <button></button>
+            <span id="Cancel" hidden></span>
+          </form>
         </span>
-        <a href="#" class="navLinks">Recipes</a>
-        <a href="#" class="navLinks">Dinner TV</a>
-        <a href="#" class="navLinks">Cooking School</a>
-        <a href="#" class="navLinks">About</a>
-        <a href="#" class="navLinks" id="SignIn">Sign In</a>
+        <span id="navLinksSpan">
+          <a href="#" class="navLinks">Recipes</a>
+          <a href="#" class="navLinks">Dinner TV</a>
+          <a href="#" class="navLinks">Cooking School</a>
+          <a href="#" class="navLinks">About</a>
+          <a href="#" class="navLinks" id="SignIn">Sign In</a>
+        </span>
       </div>
     </header>
     <section>
@@ -33,7 +36,6 @@
 
       <a href="#">Explore Recipes</a>
     </section>
-  </div>
 
   <script src="/script.js"></script>
 </body>
