@@ -9,16 +9,12 @@ $Firafonts: 'Fira Sans', sans-serif;
 body{
   height: 100vh;
   width: 100vw;
-  background-color: #ffd700;
-  overflow: hidden;
-}
-#bodyDiv{
-  height: 100vh;
-  width: 100vw;
   background: url(/assets/43060.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #ffd700;
+  overflow: hidden;
 }
 
 header{
@@ -61,6 +57,7 @@ header{
           &:hover{
             color: rgb(32, 30, 30);
             background-color: rgb(168, 165, 160);
+            outline: none;
           }
         }
         button{
@@ -73,17 +70,24 @@ header{
           border: none;
           cursor: pointer;
         }
+        // #Cancel{
+        //   height: 10px;
+        //   width: 10px;
+        //   cursor: pointer;
+        //   background: url(/assets/cancel.svg);
+        //   background-position: center;
+        //   background-repeat: no-repeat;
+        //   background-size: 100%;
+        // }
+        #buttonPlaceHolder{
+          height: 1vw;
+          width: 1vw;
+          background: url(/assets/search.svg) no-repeat center/100%;
+          display: inline-block;
+          cursor: pointer;
+        }
       }
 
-      #Cancel{
-        height: 10px;
-        width: 10px;
-        cursor: pointer;
-        background: url(/assets/cancel.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-      }
     }
     a{
       text-decoration: none;
@@ -112,7 +116,7 @@ header{
   right: 0;
 }
 
-section{
+#contentBody{
   // background-color: rgb(73, 184, 29);
   height: 45vh;
   position: relative;
@@ -151,5 +155,54 @@ section{
     &:hover{  
       border-bottom: 2px solid gold;
     }
+  }
+}
+
+#resultPage{
+  height: 0vh;
+  width: 0vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  background: gold;
+  position: fixed;
+  top: 0;
+  // transition: all 2s;
+  #closePage{
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    font-size: 7vh;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+  }
+  ul{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    height: 70vh;
+    width: 30vw;
+    li{
+      margin-left: 2vw;
+      color: #000000;
+      font-size: 3vh;
+    }
+  }
+}
+
+
+// ================================================================
+//                          Media Queries
+// ================================================================
+
+@media screen and (max-width: 2080px) {
+  #logo{
+    display: none;
   }
 }

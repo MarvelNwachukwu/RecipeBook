@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
   <title>Recipe Book</title>
 </head>
-<body id="bodyDiv">
-    <header>
-      <div id="logo"></div>
-      <div id="navMenu">
-        <span id="formSpan">
-          <form action="">
-            <input type="text" placeholder="...Search Recipe" width="0vw">
-            <button></button>
-            <span id="Cancel" hidden></span>
-          </form>
-        </span>
-        <span id="navLinksSpan">
-          <a href="#" class="navLinks">Recipes</a>
-          <a href="#" class="navLinks">Dinner TV</a>
-          <a href="#" class="navLinks">Cooking School</a>
-          <a href="#" class="navLinks">About</a>
-          <a href="#" class="navLinks" id="SignIn">Sign In</a>
-        </span>
-      </div>
-    </header>
-    <section>
-      <h1>Let's Get Cooking!</h1>
-      <p>
-        Explore the best recipes from around the world, Make cooking enjoyable again.
-      </p>
 
-      <a href="#">Explore Recipes</a>
-    </section>
+<body>
+  <header>
+    <div id="logo"></div>
+    <div id="navMenu">
+      <span id="formSpan">
+        <form action="">
+          <input type="text" placeholder="...Search Recipe" width="0vw">
+          <button hidden></button>
+          <!-- <span id="Cancel"></span> -->
+          <div id="buttonPlaceHolder"></div>
+        </form>
+      </span>
+      <span id="navLinksSpan">
+        <a href="#" class="navLinks">Recipes</a>
+        <a href="#" class="navLinks">Dinner TV</a>
+        <a href="#" class="navLinks">Cooking School</a>
+        <a href="#" class="navLinks">About</a>
+        <a href="#" class="navLinks" id="SignIn">Sign In</a>
+      </span>
+    </div>
+  </header>
+  <section id="contentBody">
+    <h1>Let's Get Cooking!</h1>
+    <p>
+      Explore the best recipes from around the world, Make cooking enjoyable again.
+    </p>
+
+    <a href="#" id="showAll">Explore Recipes</a>
+  </section>
+  <section id="resultPage">
+    <div id="closePage">&times;</div>
+   <ul></ul>
+  </section>
 
   <script src="/script.js"></script>
+
+
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+  TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAHK1zcINkyNN4hrMN6AL_tLvurzXcqde8",
+      authDomain: "let-s-get-cooking.firebaseapp.com",
+      databaseURL: "https://let-s-get-cooking.firebaseio.com",
+      projectId: "let-s-get-cooking",
+      storageBucket: "let-s-get-cooking.appspot.com",
+      messagingSenderId: "137382665120",
+      appId: "1:137382665120:web:5ed691a7847cbe0812a2c5",
+      measurementId: "G-QY63XFMH5B"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script> -->
 </body>
+
 </html>

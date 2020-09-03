@@ -8,17 +8,12 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #ffd700;
-  overflow: hidden;
-}
-
-#bodyDiv {
-  height: 100vh;
-  width: 100vw;
   background: url(/assets/43060.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #ffd700;
+  overflow: hidden;
 }
 
 header {
@@ -71,6 +66,7 @@ header #navMenu #formSpan form input {
 header #navMenu #formSpan form input:hover {
   color: #201e1e;
   background-color: #a8a5a0;
+  outline: none;
 }
 
 header #navMenu #formSpan form button {
@@ -84,14 +80,12 @@ header #navMenu #formSpan form button {
   cursor: pointer;
 }
 
-header #navMenu #formSpan #Cancel {
-  height: 10px;
-  width: 10px;
+header #navMenu #formSpan form #buttonPlaceHolder {
+  height: 1vw;
+  width: 1vw;
+  background: url(/assets/search.svg) no-repeat center/100%;
+  display: inline-block;
   cursor: pointer;
-  background: url(/assets/cancel.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 header #navMenu a {
@@ -120,12 +114,12 @@ header #navMenu #SignIn {
   right: 0;
 }
 
-section {
+#contentBody {
   height: 45vh;
   position: relative;
 }
 
-section h1 {
+#contentBody h1 {
   position: absolute;
   top: 20vh;
   margin-left: 5vw;
@@ -134,7 +128,7 @@ section h1 {
   color: #202020;
 }
 
-section p {
+#contentBody p {
   position: absolute;
   min-width: 20vw;
   max-width: 40vw;
@@ -145,7 +139,7 @@ section p {
   color: #202020;
 }
 
-section a {
+#contentBody a {
   position: absolute;
   top: 70vh;
   margin-left: 5vw;
@@ -158,7 +152,57 @@ section a {
   font-family: "Fira Sans", sans-serif;
 }
 
-section a:hover {
+#contentBody a:hover {
   border-bottom: 2px solid gold;
+}
+
+#resultPage {
+  height: 0vh;
+  width: 0vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  background: gold;
+  position: fixed;
+  top: 0;
+}
+
+#resultPage #closePage {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  color: white;
+  z-index: 1;
+  font-size: 7vh;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+
+#resultPage ul {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  height: 70vh;
+  width: 30vw;
+}
+
+#resultPage ul li {
+  margin-left: 2vw;
+  color: #000000;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 2080px) {
+  #logo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
